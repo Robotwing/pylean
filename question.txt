@@ -1,0 +1,24 @@
+1. 单引号和双引号用法都是一样的，但是如果字符串里有相同的字符时要使用\进行转义
+
+举例：
+1) print 'hello'
+2) print "hello"
+1和2，结果都是hello
+
+3) print 'hell\'o'
+4) print "hell'o"
+3和4，结果都是hell'o
+
+5) print 'hell"o'
+6) print "hell\"o"
+5和6，结果都是hell"o
+
+2. 三引号与他们不同之处：“所见即所得”，对于一段html或xml格式的字符串时用三引号更直观点（此时要用单引号或双引号时候需要进行转义）
+如：
+print '''
+hello'
+world"
+'''
+结果是
+hello'
+world"
